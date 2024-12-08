@@ -69,6 +69,40 @@ h2 {
     color: white
 }
 
+/* Events Section Responsiveness */
+#events {
+    padding: 2rem 1rem;
+    margin: auto;
+    max-width: 1200px;
+}
+
+#events h2 {
+    margin-bottom: 1.5rem;
+}
+
+#events p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Table responsive styling */
+#events .table {
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+
+#events .table th, #events .table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#events p {
+    margin-bottom: 1rem;
+}
+
+
 
 /* Navbar */
 
@@ -161,14 +195,36 @@ h2 {
 
 /* Media queries */
 
+/* Ensure no overflow on small screens */
+@media (max-width: 320px) {
+    #events .table {
+        font-size: 0.8rem;
+    }
+
+    #events .table th, #events .table td {
+        padding: 0.4rem;
+    }
+}
+
+
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
     /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 191px;
     }
+
+    #events .table {
+        font-size: 0.9rem;
+    }
 }
 
+@media (max-width: 480px) {
+    #events {
+        padding: 1rem;
+    }
+
+  
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
     /* Make all service cards the same height for consistency */
